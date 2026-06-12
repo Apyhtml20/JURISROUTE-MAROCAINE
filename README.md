@@ -1,4 +1,4 @@
-# 🚔 JURISROUTE MAROCAIN 🇲🇦  
+# 🚔 JURISROUTE MAROCAIN 
 ### Plateforme intelligente d'assistance juridique routière basée sur l'IA
 
 <p align="center">
