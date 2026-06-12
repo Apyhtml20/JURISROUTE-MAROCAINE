@@ -1,8 +1,8 @@
 # 🚔 JURISROUTE MAROCAIN 🇲🇦  
-### Plateforme intelligente d’assistance juridique routière basée sur l’IA
+### Plateforme intelligente d'assistance juridique routière basée sur l'IA
 
 <p align="center">
-  <img width="505" height="93" alt="JurisRoute Logo" src="https://github.com/user-attachments/assets/14525fc4-65ab-4d22-9efe-c56999bc5f23" />
+  <img width="505" height="93" alt="JurisRoute Logo" src="./frontend/public/logos/jurisroute-hero.svg" />
 </p>
 
 ---
@@ -11,13 +11,21 @@
 
 **JURISROUTE MAROCAIN** est une plateforme web intelligente dédiée à la **gestion du Code de la Route marocain**, à la **consultation juridique automatisée**, et à la **génération intelligente de procès-verbaux routiers** assistée par Intelligence Artificielle.
 
-Ce projet vise à moderniser l’accès à l’information juridique routière au Maroc grâce à :
+Ce projet vise à moderniser l'accès à l'information juridique routière au Maroc grâce à :
 
 - 🤖 Chatbot IA spécialisé dans le droit routier marocain  
 - 📄 Génération automatique de PV routiers  
 - 📚 Recherche intelligente dans les lois et sanctions  
 - 🧠 Système RAG (Retrieval-Augmented Generation)   
 - 👤 Gestion utilisateurs complète avec PHP
+
+---
+
+## 🖼️ Aperçu
+
+<p align="center">
+  <img alt="JurisRoute - Code de la Route" src="./assets/Capture d'écran 2026-06-12 234234.png" />
+</p>
 
 ---
 
@@ -88,3 +96,4 @@ RAG Engine + FAISS
 Qwen2 LoRA Fine-Tuned
       ↓
 Réponse intelligente
+```
