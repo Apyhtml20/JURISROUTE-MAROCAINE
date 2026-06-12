@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 82" width="420" height="82"
+     role="img" aria-labelledby="jr-lt-title">
+  <title id="jr-lt-title">JurisRoute</title>
+  <defs>
+    <!-- Road clipped exactly to text width (~262px) -->
+    <clipPath id="lt-road-clip">
+      <rect x="0" y="50" width="262" height="16"/>
+    </clipPath>
+    <linearGradient id="lt-sub-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── Wordmark ── -->
+  <text font-family="'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="42" letter-spacing="-0.5">
+    <tspan x="0" y="45" font-weight="800" fill="#0F172A">JURIS</tspan><tspan font-weight="300" fill="#475569">ROUTE</tspan>
+  </text>
+
+  <!-- ── Road — exactly text width ── -->
+  <line x1="0" y1="57" x2="262" y2="57" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="0" y1="57" x2="262" y2="57"
+        stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="14 10" opacity="0.9"/>
+
+  <!-- ── Animated car clipped to road ── -->
+  <g clip-path="url(#lt-road-clip)">
+    <g>
+      <animateMotion dur="4s" repeatCount="indefinite" calcMode="linear"
+                     path="M -40,57 L 310,57"/>
+      <rect x="-13" y="-7"  width="26" height="7"   rx="2.5" fill="#1D4ED8"/>
+      <rect x="-8"  y="-13" width="16" height="6.5" rx="2"   fill="#2563EB"/>
+      <rect x="-7"  y="-12.5" width="14" height="5" rx="1.5" fill="#BAE6FD" opacity="0.85"/>
+      <circle cx="7"  cy="0" r="3.8" fill="#1E293B"/>
+      <circle cx="7"  cy="0" r="1.6" fill="#64748B"/>
+      <circle cx="-7" cy="0" r="3.8" fill="#1E293B"/>
+      <circle cx="-7" cy="0" r="1.6" fill="#64748B"/>
+      <ellipse cx="13"  cy="-3" rx="1.6" ry="1.8" fill="#FDE68A"/>
+      <ellipse cx="-13" cy="-3" rx="1.4" ry="1.6" fill="#FCA5A5" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- ── Styled subtitle ── -->
+  <circle cx="3"  cy="73" r="2.5" fill="#2563EB"/>
+  <text x="11" y="76.5"
+        font-family="'Inter', 'SF Pro Display', -apple-system, sans-serif"
+        font-size="11" font-weight="700" letter-spacing="2.8" fill="url(#lt-sub-grad)">
+    VOTRE AI ROUTIER
+  </text>
+</svg>

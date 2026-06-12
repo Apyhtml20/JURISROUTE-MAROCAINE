@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 82" width="420" height="82"
+     role="img" aria-labelledby="jr-dk-title">
+  <title id="jr-dk-title">JurisRoute</title>
+  <defs>
+    <clipPath id="dk-road-clip">
+      <rect x="0" y="50" width="262" height="16"/>
+    </clipPath>
+    <filter id="dk-glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="dk-sub-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── Wordmark ── -->
+  <text font-family="'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="42" letter-spacing="-0.5">
+    <tspan x="0" y="45" font-weight="800" fill="#F1F5F9">JURIS</tspan><tspan font-weight="300" fill="#94A3B8">ROUTE</tspan>
+  </text>
+
+  <!-- ── Road — exactly text width ── -->
+  <line x1="0" y1="57" x2="262" y2="57" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="0" y1="57" x2="262" y2="57"
+        stroke="#334155" stroke-width="1.5" stroke-dasharray="14 10" opacity="0.8"/>
+
+  <!-- ── Animated car clipped to road ── -->
+  <g clip-path="url(#dk-road-clip)">
+    <g>
+      <animateMotion dur="4s" repeatCount="indefinite" calcMode="linear"
+                     path="M -40,57 L 310,57"/>
+      <!-- Headlight glow -->
+      <ellipse cx="17" cy="-3" rx="6" ry="3.5" fill="#FDE68A" opacity="0.25" filter="url(#dk-glow)"/>
+      <rect x="-13" y="-7"  width="26" height="7"   rx="2.5" fill="#1D4ED8"/>
+      <rect x="-8"  y="-13" width="16" height="6.5" rx="2"   fill="#2563EB"/>
+      <rect x="-7"  y="-12.5" width="14" height="5" rx="1.5" fill="#7DD3FC" opacity="0.75"/>
+      <circle cx="7"  cy="0" r="3.8" fill="#020617"/>
+      <circle cx="7"  cy="0" r="1.6" fill="#1E293B"/>
+      <circle cx="-7" cy="0" r="3.8" fill="#020617"/>
+      <circle cx="-7" cy="0" r="1.6" fill="#1E293B"/>
+      <ellipse cx="13"  cy="-3" rx="1.6" ry="1.8" fill="#FDE68A" filter="url(#dk-glow)"/>
+      <ellipse cx="-13" cy="-3" rx="1.4" ry="1.6" fill="#F87171" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- ── Styled subtitle ── -->
+  <circle cx="3" cy="73" r="2.5" fill="#60A5FA"/>
+  <text x="11" y="76.5"
+        font-family="'Inter', 'SF Pro Display', -apple-system, sans-serif"
+        font-size="11" font-weight="700" letter-spacing="2.8" fill="url(#dk-sub-grad)">
+    VOTRE AI ROUTIER
+  </text>
+</svg>

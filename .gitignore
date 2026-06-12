@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+.conda/
+venv/
+env/
+
+# Environment files (secrets)
+backend/.env
+.env
+
+# Python version managers
+.python-version
+
+# uv
+uv.lock
+pyproject.toml
+
+# ML / binary artefacts
+backend/rag/faiss_index.bin
+backend/rag/chunks.pkl
+
+# VS Code workspace files
+*.code-workspace
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Laravel / PHP
+frontend/vendor/
+frontend/node_modules/
+frontend/.env
+frontend/storage/framework/cache/
+frontend/storage/framework/sessions/
+frontend/storage/framework/views/
+frontend/storage/logs/
+frontend/bootstrap/cache/

@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+
+  # ── Backend FastAPI ───────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: jurisroute_backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend:/app
+    env_file:
+      - ./backend/.env
+    restart: unless-stopped
+    networks:
+      - jurisroute_net
+
+  # ── Frontend Laravel (SQLite) ─────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: jurisroute_frontend
+    ports:
+      - "8000:80"
+    volumes:
+      - ./frontend:/var/www/html
+      - ./frontend/database:/var/www/html/database
+      - ./frontend/storage:/var/www/html/storage
+    environment:
+      - APP_ENV=production
+      - APP_DEBUG=false
+      - DB_CONNECTION=sqlite
+      - JURISROUTE_API_URL=http://backend:8080
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - jurisroute_net
+
+networks:
+  jurisroute_net:
+    driver: bridge
