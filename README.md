@@ -81,7 +81,7 @@ Dataset entièrement **collecté, structuré et nettoyé manuellement** par moi-
 | OCR | Python OCR |
 | Base de données | MySQL |
 | Conteneurisation | Docker |
-
+ccc
 ---
 
 ## 🧱 Architecture
